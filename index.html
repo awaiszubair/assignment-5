@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            display: grid;
+            grid-template-areas: 
+            "nav nav nav nav nav"
+            "main main main main main"
+            "main main main main main"
+            "main main main main main"
+            "main main main main main"
+            "main main main main main"
+            "main main main main main"
+            "main main main main main"
+            "footer footer footer footer footer"
+            "footer footer footer footer footer"
+
+        }
+        nav{grid-area: nav;}
+        main{grid-area: main;}
+        footer{grid-area: footer;}
+        .box{background-color: red;}
+        .box ul{list-style-type: none;}
+        .box ul li{display: inline-block;padding: 0.5rem;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <nav class="box" style="display: flex;justify-content:space-between;align-items: center;">
+        <h1>LOGO</h1>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact us</li>
+        </ul>
+    </nav>
+    <main class="box">
+        <img src="one.jpg" alt="" style="height: 23rem;width: 100%;">
+    </main>
+    <footer class="box" style="display: flex;justify-content: center;align-items: center;">
+        <h1>Copyright@awaiszubair</h1>
+    </footer>
+</div>
+</body>
+</html>
